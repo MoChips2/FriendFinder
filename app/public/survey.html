@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <title>Survey</title>
     <style>
         body {
@@ -30,7 +29,7 @@
         <h3><strong>Question 1</strong></h3>
         <h5>How do you feel about coding?</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i1">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -42,7 +41,7 @@
         <h3><strong>Question 2</strong></h3>
         <h5>You are likely to go ski-diving soon.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i2">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -54,7 +53,7 @@
         <h3><strong>Question 3</strong></h3>
         <h5>People tend to think you can be timid at times.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i3">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -66,7 +65,7 @@
         <h3><strong>Question 4</strong></h3>
         <h5>Your idea of a good time is staying home and reading a good book.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i4">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -78,7 +77,7 @@
         <h3><strong>Question 5</strong></h3>
         <h5>It is difficult to relate to other people's feelings.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i5">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -90,7 +89,7 @@
         <h3><strong>Question 6</strong></h3>
         <h5>You would consider yourself an introvert.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i6">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -102,7 +101,7 @@
         <h3><strong>Question 7</strong></h3>
         <h5>You would consider yourself an extrovert.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i7">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -114,7 +113,7 @@
         <h3><strong>Question 8</strong></h3>
         <h5>You believe an eye for eye is fair and just.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i8">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -126,7 +125,7 @@
         <h3><strong>Question 9</strong></h3>
         <h5>Your a fun, energetic person and need your friends to keep up with your high energy.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i9">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -138,7 +137,7 @@
         <h3><strong>Question 10</strong></h3>
         <h5>If you found a $20 bill on the ground in Target, you would return it to customer service.</h5>
         <div class="input-group mb-3">
-            <select class="chosen-select" id="input-group">
+            <select class="chosen-select" id="i10">
                 <option value="" disabled selected hidden>Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -148,21 +147,55 @@
             </select>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary btn-block btn-lrg my-4">Submit</button>
+        <button type="submit" class="btn btn-primary btn-block btn-lrg my-4 submit">Submit</button>
         <hr>
         <footer class="footer">
             <div class="container">
                 <p>
                     <a href="/api/friends">API Friends List</a>
-                    | <a href="">GitHub Repo</a>
                 </p>
             </div>
         </footer>
+    </div>
+
+    <div class="container">
+        
     </div>
 </body>
 
 <script type="text/javascript">
 
+
+    $(".submit").on("click", function(event) {
+        event.preventDefault();
+
+        var newPersonData = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            q1: $("#i1").val(),
+            q2: $("#i2").val(),
+            q3: $("#i3").val(),
+            q4: $("#i4").val(),
+            q5: $("#i5").val(),
+            q6: $("#i6").val(),
+            q7: $("#i7").val(),
+            q8: $("#i8").val(),
+            q9: $("#i9").val(),
+            q10: $("#i10").val()
+        }
+
+        console.log (newPersonData);
+       
+        $.post("/api/friends", newPersonData, 
+          function(data) {
+
+            if (data) {
+                alert("Finding new friend...");
+            }
+
+            
+        });
+    });
 
 </script>
 
