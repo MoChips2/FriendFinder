@@ -163,7 +163,22 @@
     </div>
 
     <div class="container">
-
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title"></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 </body>
 
@@ -192,7 +207,7 @@
                 ]
             }
 
-            console.log(newPersonData);
+            // console.log(newPersonData);
 
             $.post("/api/friends", newPersonData,
                 function (data) {
@@ -217,7 +232,6 @@
                 });
         });
 
-        newFriend();
     };
 
 
@@ -228,18 +242,14 @@
 
                 console.log(friendData);
 
-            
-                for(i=0; i<friendData.length; i++) {
-                    
-                    var score = friendData.score[i];
-                    if (friendData.score) {
-                        
-                    }
-                }
-            })
-    }
+                $(".modal-title").append(friendData[0].name);
+                $(".modal-title").append(friendData[0].photo);
+                
+            });
+    };
 
     postSurvey();
+    newFriend();
 
 </script>
 
