@@ -232,6 +232,7 @@
                 });
         });
 
+        newFriend();
     };
 
 
@@ -242,14 +243,14 @@
 
                 console.log(friendData);
 
-                $(".modal-title").append(friendData[0].name);
-                $(".modal-title").append(friendData[0].photo);
+                console.log(friendData[0].name);
+                console.log(friendData[0].photo);
                 
             });
     };
 
     postSurvey();
-    newFriend();
+   
 
 </script>
 
